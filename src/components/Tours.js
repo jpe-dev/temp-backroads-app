@@ -5,7 +5,7 @@ import { toursData } from '../data/toursData'
 
 const Tours = () => {
     const tours = toursData.map((tour => {
-        const { id, title, description, startDate, place, daysNumber, price, image } = tour;
+        const { title, description, startDate, place, daysNumber, price, image } = tour;
         const dateFormat = Intl.DateTimeFormat("en", {
             year: "numeric",
             day: "2-digit",
